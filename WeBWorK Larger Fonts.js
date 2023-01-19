@@ -7,5 +7,4 @@
 // @icon         https://webwork.maa.org/favicon.ico
 // ==/UserScript==
 
-
 document.getElementById("output_problem_body").style.fontSize = "20px";
