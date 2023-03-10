@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name         WeBWorK Larger Fonts
+// @namespace    https://github.com/anthonydu/userscripts
 // @description  Enlarges problem body font size to 20px
 // @version      0
 // @author       Anthony Du
