@@ -1,0 +1,68 @@
+/**
+ * Boost Source: https://arcboosts.com/boosts/79/simplify-youtube
+ */
+
+/* Removes scrollbar */
+body::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Removes header filters */
+#primary > ytd-rich-grid-renderer > #header:has(ytd-feed-filter-chip-bar-renderer) {
+  display: none !important;
+}
+
+/* Removes rich sections (e.g. Shorts) */
+ytd-rich-section-renderer {
+  display: none !important;
+}
+
+/* Removes Shorts, Originals, YouTube Music, My clips buttons from sidebar */
+#items > ytd-guide-entry-renderer:has(a[title="Shorts"]),
+#items > ytd-guide-entry-renderer:has(a[title="Originals"]),
+#items > ytd-guide-entry-renderer:has(a[title="YouTube Music"]),
+#section-items > ytd-guide-entry-renderer:has(a[title="Your clips"]) {
+  display: none !important;
+}
+
+/* Removes Subscriptions, More from YouTube sections from sidebar */
+#sections > ytd-guide-section-renderer:nth-child(2),
+#sections > ytd-guide-section-renderer:nth-child(4) {
+  display: none !important;
+}
+
+/* Removes voice search, create button */
+#voice-search-button,
+#buttons > ytd-topbar-menu-button-renderer:nth-child(1) {
+  display: none !important;
+}
+
+/* Removes additional metadata */
+#below > ytd-watch-metadata > ytd-metadata-row-container-renderer {
+  display: none !important;
+}
+
+/* Removes suggested section filters */
+#items > yt-related-chip-cloud-renderer {
+  display: none !important;
+}
+
+/* Removes text from detail section buttons */
+#top-level-buttons-computed > ytd-button-renderer > yt-button-shape > button > div.cbox.yt-spec-button-shape-next--button-text-content > span,
+#flexible-item-buttons ytd-button-renderer > yt-button-shape > button > div.cbox.yt-spec-button-shape-next--button-text-content > span {
+  display: none !important;
+}
+#top-level-buttons-computed > ytd-button-renderer > yt-button-shape > button > div.yt-spec-button-shape-next__icon,
+#flexible-item-buttons ytd-button-renderer > yt-button-shape > button > div.yt-spec-button-shape-next__icon {
+  margin-right: -6px !important;
+}
+
+/* Sets theater mode to always be 16:9 */
+#movie_player > div.html5-video-container {
+  width: 100% !important;
+  height: 100% !important;
+}
+#player-theater-container {
+  max-height: unset !important;
+  min-height: unset !important;
+}
