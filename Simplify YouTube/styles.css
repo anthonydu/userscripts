@@ -21,6 +21,9 @@ ytd-rich-section-renderer {
 #items > ytd-guide-entry-renderer:has(a[title="Shorts"]),
 #items > ytd-guide-entry-renderer:has(a[title="Originals"]),
 #items > ytd-guide-entry-renderer:has(a[title="YouTube Music"]),
+#items > ytd-mini-guide-entry-renderer:has(a[title="Shorts"]),
+#items > ytd-mini-guide-entry-renderer:has(a[title="Originals"]),
+#items > ytd-mini-guide-entry-renderer:has(a[title="YouTube Music"]),
 #section-items > ytd-guide-entry-renderer:has(a[title="Your clips"]),
 #section-items > ytd-guide-entry-renderer:has(a[title="Your videos"]) {
   display: none !important;
