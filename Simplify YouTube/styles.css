@@ -81,3 +81,11 @@ ytd-rich-section-renderer {
 #movie_player > div.ytp-player-content.ytp-iv-player-content > div.annotation.annotation-type-custom.iv-branding {
   display: none !important;
 }
+
+/* Replaces miniplayer button with picture-in-picture */
+#movie_player > div.ytp-chrome-bottom > div.ytp-chrome-controls > div.ytp-right-controls > button.ytp-miniplayer-button.ytp-button {
+  display: none !important;
+}
+#movie_player > div.ytp-chrome-bottom > div.ytp-chrome-controls > div.ytp-right-controls > button.ytp-pip-button.ytp-button {
+  display: inline-block !important;
+}
