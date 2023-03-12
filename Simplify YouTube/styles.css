@@ -7,8 +7,8 @@ body::-webkit-scrollbar {
   display: none !important;
 }
 
-/* Removes header filters */
-#primary > ytd-rich-grid-renderer > #header:has(ytd-feed-filter-chip-bar-renderer) {
+/* Removes header filters (except for those on channel pages) */
+#primary > ytd-rich-grid-renderer > #header:has(ytd-feed-filter-chip-bar-renderer[component-style="FEED_FILTER_CHIP_BAR_STYLE_TYPE_DEFAULT"]) {
   display: none !important;
 }
 
@@ -61,12 +61,23 @@ ytd-rich-section-renderer {
   margin-right: -6px !important;
 }
 
-/* Sets theater mode to always be 16:9 */
+/* Removes clip, super thanks button from detail section */
+#flexible-item-buttons > ytd-button-renderer:has(button[aria-label="Clip"]),
+#flexible-item-buttons > ytd-button-renderer:has(button[aria-label="Thanks"]) {
+  display: none !important;
+}
+
+/* Sets theater mode to always be 16:9 (max-height persists by default) */
 #movie_player > div.html5-video-container {
   width: 100% !important;
   height: 100% !important;
 }
 #player-theater-container {
-  max-height: unset !important;
+  /* max-height: unset !important; */
   min-height: unset !important;
+}
+
+/* Removes annotation */
+#movie_player > div.ytp-player-content.ytp-iv-player-content > div.annotation.annotation-type-custom.iv-branding {
+  display: none !important;
 }
