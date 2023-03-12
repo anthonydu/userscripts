@@ -1,4 +1,4 @@
 # [Arc Boosts!](https://arcboosts.com)
 
 
-- [Amazing YouTube](https://github.com/anthonydu/arc-boosts/tree/main/Amazing%20YouTube#readme)
+- [Amazing YouTube](https://arcboosts.com/boosts/79/simplify-youtube)
