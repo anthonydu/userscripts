@@ -95,19 +95,23 @@ styleSheet.textContent += AdvocateAncientST;
 
 if (!exclude.includes(window.location.hostname)) {
   document.head.appendChild(styleSheet);
+  let elementSet = new Set();
   window.setInterval(() => {
     for (let e of document.querySelectorAll("*")) {
+      if (elementSet.has(e)) continue;
+
       let computedFont = window.getComputedStyle(e).getPropertyValue("font-family");
       if (!computedFont.includes("AdvocateAncient")) {
         if (computedFont.includes("sans-serif")) {
           e.style.setProperty("font-family", "AdvocateAncientSansST, " + computedFont);
           console.log("Sans-serif", e, computedFont);
         } else if (computedFont.includes("serif")) {
-          console.log("serif");
           e.style.setProperty("font-family", "AdvocateAncientSerifST, " + computedFont);
           console.log("Serif", e, computedFont);
         }
       }
+
+      elementSet.add(e);
     }
   }, 125);
 }
