@@ -1,4 +1,4 @@
-let exclude = ["www.canva.com"];
+let exclude = [];
 
 let AdvocateAncientST = `
 @font-face {
@@ -101,10 +101,12 @@ if (!exclude.includes(window.location.hostname)) {
       if (!computedFont.includes("AdvocateAncient")) {
         if (computedFont.includes("sans-serif")) {
           e.style.setProperty("font-family", "AdvocateAncientSansST, " + computedFont);
+          console.log("Sans-serif", e, computedFont);
         } else if (computedFont.includes("serif")) {
+          console.log("serif");
           e.style.setProperty("font-family", "AdvocateAncientSerifST, " + computedFont);
+          console.log("Serif", e, computedFont);
         }
-        console.log(window.getComputedStyle(e).getPropertyValue("font-family"));
       }
     }
   }, 125);
