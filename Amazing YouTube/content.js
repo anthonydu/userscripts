@@ -1,7 +1,3 @@
-///
-/// Boost Source: https://arcboosts.com/boosts/79/simplify-youtube
-///
-
 document.addEventListener('yt-navigate-finish', () => {
   /* Any code below will only run on watch pages */
   if (!window.location.href.includes("watch")) return;

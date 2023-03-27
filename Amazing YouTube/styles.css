@@ -1,7 +1,3 @@
-/**
- * Boost Source: https://arcboosts.com/boosts/79/simplify-youtube
- */
-
 /* Removes scrollbar */
 body::-webkit-scrollbar {
   display: none !important;
