@@ -6,11 +6,12 @@
   }
 
   .main-wrapper {
-    padding-left: 60px !important;
+    padding-left: 120px !important;
+    padding-right: 120px !important;
   }
 
   .main-topbar {
-    margin-left: 60px !important;
-    width: calc(100% - 60px) !important;
+    margin-left: 120px !important;
+    width: calc(100% - 260px) !important;
   }
 }
