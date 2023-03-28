@@ -1,0 +1,16 @@
+/* Websites: app.crowdmark.com/student/assessments/ */
+
+@media screen and (min-width: 900px) {
+  .main-sidebar {
+    display: none !important;
+  }
+
+  .main-wrapper {
+    padding-left: 60px !important;
+  }
+
+  .main-topbar {
+    margin-left: 60px !important;
+    width: calc(100% - 60px) !important;
+  }
+}
