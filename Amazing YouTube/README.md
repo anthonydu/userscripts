@@ -1,5 +1,7 @@
 # [Amazing YouTube](https://arcboosts.com/boosts/79/simplify-youtube)
 
+THIS BOOST IS NO LONGER BEING UPDATED! PLEASE USE [AMAZING YOUTUBE 2.0](https://github.com/anthonydu/arc-boosts/tree/dc2a3c8efab7a2c8b3d67e5f1175bc431767a4de/Amazing%20YouTube%202.0) INSTEAD.
+
 This Boost simplifies YouTube's user interface by removing various components that I consider to be eyesores and useless through CSS while also adding additional nice-to-have functionalities to the site through Javascript. Feel free to experiment and customize your experience after installation. Works with YouTube's latest UI as of the most recent update date.
 
 ## List of UI elements removed (CSS)
