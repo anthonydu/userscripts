@@ -1,4 +1,6 @@
 # [Arc Boosts!](https://arcboosts.com)
 
 
-- [Amazing YouTube](https://arcboosts.com/boosts/79/simplify-youtube)
+Amazing YouTube is now a Chrome Extension!
+
+[Pending Review on Chrome Web Store]()
