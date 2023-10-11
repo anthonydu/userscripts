@@ -4,12 +4,19 @@ body::-webkit-scrollbar {
 }
 
 /* Removes header filters (except for those on channel pages) */
-#primary > ytd-rich-grid-renderer > #header:has(ytd-feed-filter-chip-bar-renderer[component-style="FEED_FILTER_CHIP_BAR_STYLE_TYPE_DEFAULT"]) {
+#primary
+  > ytd-rich-grid-renderer
+  > #header:has(
+    ytd-feed-filter-chip-bar-renderer[component-style="FEED_FILTER_CHIP_BAR_STYLE_TYPE_DEFAULT"]
+  ) {
   display: none !important;
 }
 
 /* Removes rich sections (e.g. Shorts) */
 ytd-rich-section-renderer {
+  display: none !important;
+}
+ytd-reel-shelf-renderer {
   display: none !important;
 }
 
@@ -48,12 +55,24 @@ ytd-rich-section-renderer {
 }
 
 /* Removes text from detail section buttons */
-#top-level-buttons-computed > ytd-button-renderer > yt-button-shape > button > div.cbox.yt-spec-button-shape-next--button-text-content > span,
-#flexible-item-buttons ytd-button-renderer > yt-button-shape > button > div.cbox.yt-spec-button-shape-next--button-text-content > span {
+#top-level-buttons-computed
+  > ytd-button-renderer
+  > yt-button-shape
+  > button
+  > div.cbox.yt-spec-button-shape-next__button-text-content,
+#flexible-item-buttons .yt-spec-button-shape-next__button-text-content {
   display: none !important;
 }
-#top-level-buttons-computed > ytd-button-renderer > yt-button-shape > button > div.yt-spec-button-shape-next__icon,
-#flexible-item-buttons ytd-button-renderer > yt-button-shape > button > div.yt-spec-button-shape-next__icon {
+#top-level-buttons-computed
+  > ytd-button-renderer
+  > yt-button-shape
+  > button
+  > div.yt-spec-button-shape-next__icon,
+#flexible-item-buttons
+  ytd-button-renderer
+  > yt-button-shape
+  > button
+  > div.yt-spec-button-shape-next__icon {
   margin-right: -6px !important;
 }
 
@@ -74,14 +93,17 @@ ytd-rich-section-renderer {
 }
 
 /* Removes annotation */
-#movie_player > div.ytp-player-content.ytp-iv-player-content > div.annotation.annotation-type-custom.iv-branding {
+#movie_player
+  > div.ytp-player-content.ytp-iv-player-content
+  > div.annotation.annotation-type-custom.iv-branding {
   display: none !important;
 }
 
-/* Replaces miniplayer button with picture-in-picture */
-#movie_player > div.ytp-chrome-bottom > div.ytp-chrome-controls > div.ytp-right-controls > button.ytp-miniplayer-button.ytp-button {
-  display: none !important;
-}
-#movie_player > div.ytp-chrome-bottom > div.ytp-chrome-controls > div.ytp-right-controls > button.ytp-pip-button.ytp-button {
+/* Picture-in-picture button */
+#movie_player
+  > div.ytp-chrome-bottom
+  > div.ytp-chrome-controls
+  > div.ytp-right-controls
+  > button.ytp-pip-button.ytp-button {
   display: inline-block !important;
 }

@@ -20,3 +20,9 @@ document.addEventListener('yt-navigate-finish', () => {
     }
   }, 500);
 })
+
+const resizeObserver = new ResizeObserver((entry) => {
+  document.querySelector('#columns').style.marginTop = `${entry[0].target.clientHeight}px`;
+});
+
+resizeObserver.observe(document.querySelector('#player-theater-container'));
