@@ -1,6 +1,3 @@
-# [Arc Boosts!](https://arcboosts.com)
+# Userscripts
 
-
-Amazing YouTube is now a Chrome Extension!
-
-[Pending Review on Chrome Web Store]()
+Amazing YouTube is now a [Chrome Extension](https://chromewebstore.google.com/detail/einajlahdjfnkjmhpojahhanmpefcohf)!
